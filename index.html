@@ -1,30 +1,151 @@
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Showcase the web development skills and projects of Daniel Imad from Beirut.">
-    <title>Daniel Imad - Web Developer Portfolio</title>
-    <link rel="stylesheet" href="/src/style.css">
-    <script type="module" src="/src/main.ts"></script>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main id="app">
-    </main>
-    <footer>
-        <p>&copy; 2023 Daniel Imad</p>
-    </footer>
-</body>
-</html>
+To create a minimal yet effective `style.css` for Daniel Imad's web developer portfolio, begin with a focus on responsiveness and modern UI while keeping the CSS modular and clean. Here's a simple stylesheet that aligns with the project spec you've provided:
+
+```css
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #005fa3;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Home Page Styles */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 2.5rem;
+}
+
+/* About Page Styles */
+.about {
+    padding: 50px 0;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Projects Page Styles */
+.projects {
+    padding: 50px 0;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.project img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Page Styles */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact input[type="submit"] {
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #005fa3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .projects, .about, .contact {
+        padding: 20px 0;
+    }
+    
+    .project {
+        flex-direction: column;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+    }
+}
 ```
+
+### Key Features of this CSS:
+- **Basic Styling**: Provides clean and modern aesthetics with a focus on readability.
+- **Responsive Design**: Uses media queries to ensure a consistent experience across devices.
+- **Interactive Elements**: Adds subtle effects for hover and focus interactions to enhance the user experience.
+- **Modularity**: Organized selectors and styles to be easily scalable and maintainable.
+
+This basic stylesheet is designed to support the layout and functionality described while providing a solid foundation for further development.
